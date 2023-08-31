@@ -1,3 +1,5 @@
+// Mostrar Código
+
 const icon = document.querySelector('.view__code');
 const codeBox = document.getElementById('code-box');
 let isVisible = false; // Initialize the visibility state
@@ -11,3 +13,21 @@ icon.addEventListener('click', function (event) {
     }
     isVisible = !isVisible; // Toggle the visibility state
 });
+
+//Función COPIAR CODIGO
+function copyToClipboard(codigo) {
+    var codigoText = document.querySelector(codigo + ' code').textContent;
+    navigator.clipboard.writeText(codigoText)
+        .then(() => {
+            var boton = document.querySelector(codigo + ' .btn');
+            boton.querySelector('.fa-copy').style.display = 'none';
+            boton.querySelector('.fa-check').style.display = 'inline-block';
+            setTimeout(function () {
+                boton.querySelector('.fa-copy').style.display = 'inline-block';
+                boton.querySelector('.fa-check').style.display = 'none';
+            }, 2000);
+        })
+        .catch((error) => {
+            console.error('Error al copiar al portapapeles:', error);
+        });
+}

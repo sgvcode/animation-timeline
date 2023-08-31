@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/index.css">
     <title>CSS animation-timeline 2023</title>
 </head>
@@ -12,7 +14,7 @@
 <body>
     <header class="header__content">
         <a href="#abajo1">
-            <h1 class="header__hero">ANIMACIONES<br>Y EFECTOS CSS</h1>
+            <h1 class="header__hero">ANIMATION<br>TIMELINE</h1>
         </a>
     </header>
 
@@ -52,36 +54,40 @@
     </main>
 
     <a href="#" class="view__code">
-        <iconify-icon icon="fa6-solid:code"></iconify-icon>
+        <iconify-icon icon="fa6-solid:code" class="show__code"></iconify-icon>
     </a>
     <section class="code__box" id="code-box">
         <div class="code">
-            <code><pre>
-            @keyframes view {
-                from {
-                    opacity: 0;
-                    scale: 15%;
-                }
-            
-                to {
-                    opacity: 1;
-                    scale: 100%;
-                }
-            }
-            
-            .funko {
-                animation: view;
-                view-timeline-name: --funko;
-                view-timeline-axis: block;
-                animation-timeline: --funko;
-                animation-name: view;
-                animation-range: entry 25% cover 60%;
-                animation-fill-mode: both;
-                outline: 6px dotted silver
-            }
-        </pre></code>
-            <a href=https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline" target="_blank">
-                <h5>animation-timeline todavía sólo compatible c/Edge/Chrome/Chromium-based</h5>
+            <pre id="codigo1">
+                <button onclick="copyToClipboard('#codigo1')" class="btn"><i class="fa-regular fa-copy"></i><i
+                        class="fa-solid fa-check"></i></button>
+                <code>
+                    @keyframes view {
+                        from {
+                            opacity: 0;
+                            scale: 15%;
+                        }
+
+                        to {
+                            opacity: 1;
+                            scale: 100%;
+                        }
+                    }
+
+                    .funko {
+                        animation: view;
+                        view-timeline-name: --funko;
+                        view-timeline-axis: block;
+                        animation-timeline: --funko;
+                        animation-name: view;
+                        animation-range: entry 25% cover 60%;
+                        animation-fill-mode: both;
+                        outline: 6px dotted silver
+                    }
+                </code>
+                </pre>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline" target="_blank">
+                <h5>actualmente 100% compatible c/Edge/Chrome/Chromium-based</h5>
             </a>
         </div>
     </section>
