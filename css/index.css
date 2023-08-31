@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
-    --blanco: whitesmoke;
+    --blanco: rgb(241, 241, 241);
     --negro: rgb(15, 15, 15);
     --grey: rgb(109, 109, 109);
-    --color1: rgb(194, 112, 249);
+    --color1: rgb(206, 112, 249);
+    --color2: rgb(104, 151, 217);
     --montserrat: 'Montserrat', sans-serif;
     --courier: 'Courier Prime', monospace;
 }
@@ -172,7 +173,7 @@ img {
 .code__box {
     width: 100%;
     position: fixed;
-    /* background-color: var(--negro); */
+    background-color: var(--negro);
     color: var(--blanco);
     margin: auto;
     padding: 10rem 0;
@@ -194,6 +195,10 @@ code {
     background-color: var(--negro);
     padding: 40px 0;
     background-color: var(--negro);
+}
+
+.animation-timeline {
+    font-size: 1.6rem;
 }
 
 button.btn {
@@ -263,6 +268,7 @@ h5 {
 }
 
 .primero {
+    color: var(--color2);
     animation: mostrarPrimero 4s infinite alternate;
 }
 

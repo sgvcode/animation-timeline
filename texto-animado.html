@@ -12,12 +12,10 @@
 </head>
 
 <body>
-
-    <header class="cambio">
-        <div class="textos">
-            <h1 class="primero">animation<br>timeline</h1>
-            <h1 class="segundo">Nueva<br>Propiedad<br>CSS</h1>
-        </div>
+    <header class="header__content">
+        <a href="#abajo1">
+            <h1 class="header__hero">ANIMATION<br>TIMELINE</h1>
+        </a>
     </header>
 
     <main>
@@ -63,54 +61,29 @@
             <pre id="codigo1">
                 <button onclick="copyToClipboard('#codigo1')" class="btn"><span class="copiar">Copiar código </span><i class="fa-regular fa-copy"></i><i
                         class="fa-solid fa-check"></i></button>
-<code>/* Prueba Alternar 2 Textos */
-.cambio {
-    background-color: var(--negro);
-    height: 100vh;
-}
-.textos {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--color1)
-}
-.primero,
-.segundo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-.segundo {
-    animation: mostrarSegundo 4s infinite alternate;
-}
-.primero {
-    animation: mostrarPrimero 4s infinite alternate;
-}
-@keyframes mostrarSegundo {
+<code class="animation-timeline">@keyframes view {
     from {
         opacity: 0;
+        scale: 15%;
     }
+
     to {
         opacity: 1;
+        scale: 100%;
     }
 }
-@keyframes mostrarPrimero {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+
+.funko {
+    animation: view;
+    view-timeline-name: --funko;
+    view-timeline-axis: block;
+    animation-timeline: --funko;
+    animation-name: view;
+    animation-range: entry 25% cover 60%;
+    animation-fill-mode: both;
+    outline: 6px dotted silver
 }</code>
                 </pre>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline" target="_blank">
-            </a>
         </div>
     </section>
 
