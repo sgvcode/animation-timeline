@@ -3,6 +3,7 @@
 :root {
     --blanco: whitesmoke;
     --negro: rgb(15, 15, 15);
+    --grey: rgb(109, 109, 109);
     --color1: rgb(194, 112, 249);
     --montserrat: 'Montserrat', sans-serif;
     --courier: 'Courier Prime', monospace;
@@ -171,7 +172,7 @@ img {
 .code__box {
     width: 100%;
     position: fixed;
-    background-color: var(--negro);
+    /* background-color: var(--negro); */
     color: var(--blanco);
     margin: auto;
     padding: 10rem 0;
@@ -181,30 +182,38 @@ img {
 
 pre {
     white-space: pre;
-    position: relative;
-    margin-right: 150px;
 }
 
 code {
     display: flex;
+    position: relative;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     font-size: 1.6rem;
-
-    /* background-color: brown; */
     margin: auto;
-    padding: 0;
+    background-color: var(--negro);
+    padding: 40px 0;
+    background-color: var(--negro);
 }
 
 button.btn {
+    display: flex;
+    align-items: center;
     position: absolute;
-    right: -100px;
-    top: 20px;
+    top: 42px;
+    right: 90px;
     background-color: transparent;
     border: none;
-    color: var(--blanco);
+    color: var(--grey);
     font-size: 2rem;
     cursor: pointer;
+    transition: color .5s ease;
+}
+
+.copiar {
+    color: color1;
+    font-size: .9rem;
+    padding-right: 3px;
 }
 
 button.btn:hover {
