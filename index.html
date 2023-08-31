@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>CSS animation-timeline 2023</title>
+</head>
+
+<body>
+    <header class="header__content">
+        <a href="#abajo1">
+            <h1 class="header__hero">ANIMACIONES<br>Y EFECTOS CSS</h1>
+        </a>
+    </header>
+
+    <main>
+        <section class="css">
+            <article class="img__animation a1" id="abajo1">
+                <h2>FUNKO POP UNO</h2>
+                <img class="funko" src="img/etta-candy.jpg" alt="">
+                <p class="img__detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis tempora, odio,
+                    eius laudantium illo
+                    excepturi culpa placeat velit nobis doloremque vel praesentium iste dolore? Dignissimos soluta nobis
+                    nihil laborum voluptatem aliquid, nostrum eaque? Soluta ut sed in culpa, quidem hic iure fugiat
+                    magni voluptatem omnis consequatur dolor numquam, accusamus esse!</p>
+            </article>
+            <article class="img__animation a2" id="abajo2">
+                <h2>FUNKO POP DOS</h2>
+                <img class="funko" src="img/miguel.jpg" alt="">
+                <p class="img__detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis tempora, odio,
+                    eius laudantium illo
+                    excepturi culpa placeat velit nobis doloremque vel praesentium iste dolore? Dignissimos soluta nobis
+                    nihil laborum voluptatem aliquid, nostrum eaque? Soluta ut sed in culpa, quidem hic iure fugiat
+                    magni voluptatem omnis consequatur dolor numquam, accusamus esse!</p>
+            </article>
+            <article class="img__animation a3" id="abajo3">
+                <h2>FUNKO POP TRES</h2>
+                <img class="funko" src="img/nebula.jpg" alt="">
+                <p class="img__detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis tempora, odio,
+                    eius laudantium illo
+                    excepturi culpa placeat velit nobis doloremque vel praesentium iste dolore? Dignissimos soluta nobis
+                    nihil laborum voluptatem aliquid, nostrum eaque? Soluta ut sed in culpa, quidem hic iure fugiat
+                    magni voluptatem omnis consequatur dolor numquam, accusamus esse!</p>
+            </article>
+        </section>
+        <section class="javascript">
+
+        </section>
+    </main>
+
+    <a href="#" class="view__code">
+        <iconify-icon icon="fa6-solid:code"></iconify-icon>
+    </a>
+    <section class="code__box" id="code-box">
+        <div class="code">
+            <code><pre>
+            @keyframes view {
+                from {
+                    opacity: 0;
+                    scale: 15%;
+                }
+            
+                to {
+                    opacity: 1;
+                    scale: 100%;
+                }
+            }
+            
+            .funko {
+                animation: view;
+                view-timeline-name: --funko;
+                view-timeline-axis: block;
+                animation-timeline: --funko;
+                animation-name: view;
+                animation-range: entry 25% cover 60%;
+                animation-fill-mode: both;
+                outline: 6px dotted silver
+            }
+        </pre></code>
+            <a href=https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline" target="_blank">
+                <h5>animation-timeline todavía sólo compatible c/Edge/Chrome/Chromium-based</h5>
+            </a>
+        </div>
+    </section>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
