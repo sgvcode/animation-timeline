@@ -177,7 +177,7 @@ img {
     margin: auto;
     padding: 10rem 0;
     z-index: 998;
-    /* display: none; */
+    display: none;
 }
 
 pre {
@@ -236,9 +236,6 @@ h5 {
 .cambio {
     background-color: var(--negro);
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .textos {
