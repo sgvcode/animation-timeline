@@ -31,3 +31,23 @@ function copyToClipboard(codigo) {
             console.error('Error al copiar al portapapeles:', error);
         });
 }
+
+
+// Cambio de texto con transición
+const nuevoTexto = document.querySelector(".header__hero");
+
+nuevoTexto.addEventListener("mouseover", () => {
+    nuevoTexto.style.opacity = "0";
+    setTimeout(() => {
+        nuevoTexto.innerHTML = `Nueva<br>propiedad<br>CSS`;
+        nuevoTexto.style.opacity = "1";
+    }, 500);
+});
+
+nuevoTexto.addEventListener("mouseout", () => {
+    nuevoTexto.style.opacity = "0";
+    setTimeout(() => {
+        nuevoTexto.innerHTML = `ANIMATION<br>TIMELINE`;
+        nuevoTexto.style.opacity = "1";
+    }, 1000);
+});
