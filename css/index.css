@@ -172,8 +172,8 @@ img {
 }
 
 .show__code:hover {
-    color: var(--blanco);
     transform: rotate(-180deg);
+    filter: hue-rotate(90deg);
 }
 
 .code__box {
@@ -245,28 +245,9 @@ h5 {
 
 /* Prueba Alternar 2 Textos */
 
-
-
 .cambio {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
     background-color: var(--negro);
     height: 100vh;
-}
-
-.menu {
-    margin-bottom: 50px;
-}
-
-.menu1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    margin-bottom: 0;
 }
 
 .textos {
@@ -285,16 +266,16 @@ h5 {
     text-align: center;
 }
 
-.segundo {
+.primero {
     animation: mostrarSegundo 4s infinite alternate;
 }
 
-.primero {
+.segundo {
     color: var(--color2);
     animation: mostrarPrimero 4s infinite alternate;
 }
 
-@keyframes mostrarSegundo {
+@keyframes mostrarPrimero {
     from {
         opacity: 0;
     }
@@ -304,7 +285,7 @@ h5 {
     }
 }
 
-@keyframes mostrarPrimero {
+@keyframes mostrarSegundo {
     from {
         opacity: 1;
     }

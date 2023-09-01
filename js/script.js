@@ -2,16 +2,16 @@
 
 const icon = document.querySelector('.view__code');
 const codeBox = document.getElementById('code-box');
-let isVisible = false; // Initialize the visibility state
+let isVisible = false;
 
 icon.addEventListener('click', function (event) {
     event.preventDefault(); // Prevent the default link behavior
     if (isVisible) {
-        codeBox.style.display = 'none'; // Hide the box
+        codeBox.style.display = 'none'; // Esconde box
     } else {
-        codeBox.style.display = 'block'; // Show the box
+        codeBox.style.display = 'block'; // Muestra box
     }
-    isVisible = !isVisible; // Toggle the visibility state
+    isVisible = !isVisible; // Alterna estado visibilidad
 });
 
 //Función COPIAR CODIGO

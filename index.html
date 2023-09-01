@@ -65,16 +65,17 @@
             <pre id="codigo1">
                 <button onclick="copyToClipboard('#codigo1')" class="btn"><span class="copiar">Copiar código </span><i class="fa-regular fa-copy"></i><i
                         class="fa-solid fa-check"></i></button>
+                        <pre>
 <code>/* Prueba Alternar 2 Textos */
 .cambio {
-    background-color: var(--negro);
+    background-color: black;
     height: 100vh;
 }
 .textos {
     text-align: center;
     font-size: 4rem;
     font-weight: 700;
-    color: var(--color1)
+    color: rgb(206, 112, 249);
 }
 .primero,
 .segundo {
@@ -84,13 +85,14 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.segundo {
+.primero {
     animation: mostrarSegundo 4s infinite alternate;
 }
-.primero {
+.segundo {
+    color: rgb(104, 151, 217);
     animation: mostrarPrimero 4s infinite alternate;
 }
-@keyframes mostrarSegundo {
+@keyframes mostrarPrimero {
     from {
         opacity: 0;
     }
@@ -98,7 +100,7 @@
         opacity: 1;
     }
 }
-@keyframes mostrarPrimero {
+@keyframes mostrarSegundo {
     from {
         opacity: 1;
     }
