@@ -18,6 +18,7 @@
             <h1 class="primero">animation<br>timeline</h1>
             <h1 class="segundo">Nueva<br>Propiedad<br>CSS</h1>
         </div>
+        <!-- <a class="menu" href="texto-animado.html">versión javascript</a> -->
     </header>
 
     <main>
@@ -31,8 +32,8 @@
                     nihil laborum voluptatem aliquid, nostrum eaque? Soluta ut sed in culpa, quidem hic iure fugiat
                     magni voluptatem omnis consequatur dolor numquam, accusamus esse!</p>
             </article>
-            <article class="img__animation a2" id="abajo2">
-                <h2>FUNKO POP DOS</h2>
+            <article class="img__animation a1" id="abajo1">
+                <h2>FUNKO POP UNO</h2>
                 <img class="funko" src="img/miguel.jpg" alt="">
                 <p class="img__detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis tempora, odio,
                     eius laudantium illo
@@ -40,6 +41,7 @@
                     nihil laborum voluptatem aliquid, nostrum eaque? Soluta ut sed in culpa, quidem hic iure fugiat
                     magni voluptatem omnis consequatur dolor numquam, accusamus esse!</p>
             </article>
+
             <article class="img__animation a3" id="abajo3">
                 <h2>FUNKO POP TRES</h2>
                 <img class="funko" src="img/nebula.jpg" alt="">
@@ -76,15 +78,11 @@
 }
 .primero,
 .segundo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 .segundo {
     animation: mostrarSegundo 4s infinite alternate;

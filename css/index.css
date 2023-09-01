@@ -65,6 +65,7 @@ li {
 .header__content {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
     background-color: var(--negro);
@@ -110,6 +111,10 @@ li {
     font-weight: 700;
 }
 
+.css {
+    scroll-snap-type: y mandatory;
+}
+
 img {
     width: 100%;
 }
@@ -124,6 +129,7 @@ img {
     min-height: 100vh;
     gap: 3rem;
     transition: all 3s ease-in-out;
+    scroll-snap-align: center;
 }
 
 @keyframes view {
@@ -146,7 +152,7 @@ img {
     animation-name: view;
     animation-range: entry 25% cover 60%;
     animation-fill-mode: both;
-    outline: 6px dotted silver
+    border: 6px dashed silver
 }
 
 .img__detail {
@@ -198,7 +204,7 @@ code {
 }
 
 .animation-timeline {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 button.btn {
@@ -238,9 +244,29 @@ h5 {
 }
 
 /* Prueba Alternar 2 Textos */
+
+
+
 .cambio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     background-color: var(--negro);
     height: 100vh;
+}
+
+.menu {
+    margin-bottom: 50px;
+}
+
+.menu1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    margin-bottom: 0;
 }
 
 .textos {
@@ -252,15 +278,11 @@ h5 {
 
 .primero,
 .segundo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .segundo {

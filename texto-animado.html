@@ -61,28 +61,24 @@
             <pre id="codigo1">
                 <button onclick="copyToClipboard('#codigo1')" class="btn"><span class="copiar">Copiar código </span><i class="fa-regular fa-copy"></i><i
                         class="fa-solid fa-check"></i></button>
-<code class="animation-timeline">@keyframes view {
-    from {
-        opacity: 0;
-        scale: 15%;
-    }
-
-    to {
-        opacity: 1;
-        scale: 100%;
-    }
-}
-
-.funko {
-    animation: view;
-    view-timeline-name: --funko;
-    view-timeline-axis: block;
-    animation-timeline: --funko;
-    animation-name: view;
-    animation-range: entry 25% cover 60%;
-    animation-fill-mode: both;
-    outline: 6px dotted silver
-}</code>
+<code class="animation-timeline">// Cambio de texto con transición
+    const nuevoTexto = document.querySelector(".header__hero");
+    
+    nuevoTexto.addEventListener("mouseover", () => {
+        nuevoTexto.style.opacity = "0";
+        setTimeout(() => {
+            nuevoTexto.innerHTML = `Nueva<br>propiedad<br>CSS`;
+            nuevoTexto.style.opacity = "1";
+        }, 500);
+    });
+    
+    nuevoTexto.addEventListener("mouseout", () => {
+        nuevoTexto.style.opacity = "0";
+        setTimeout(() => {
+            nuevoTexto.innerHTML = `ANIMATION<br>TIMELINE`;
+            nuevoTexto.style.opacity = "1";
+        }, 1000);
+    });</code>
                 </pre>
         </div>
     </section>
